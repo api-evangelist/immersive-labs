@@ -1,0 +1,40 @@
+generated: '2026-07-19'
+method: searched
+source: https://support.immersivelabs.com/hc/en-us/articles/29622787761809-API-Guide
+docs: https://docs.immersivelabs.com/
+authentication:
+  style: bearer-token
+  scheme: API access key + secret token -> short-lived bearer access token
+  token_ttl_seconds: 1800
+  detail: authentication/immersive-labs-authentication.yml
+api_style:
+  protocol: graphql
+  endpoint: https://api.immersivelabs.online/v1/graphql
+  note: >-
+    V1 is a single GraphQL endpoint (queries + mutations). A REST-architecture V2 is
+    under active development. Legacy GraphQL is no longer actively maintained.
+pagination:
+  style: relay-cursor-connections
+  evidence: >-
+    Connection-typed queries (labsConnection, workforceScenariosConnection) follow
+    the GraphQL Relay connection pattern (edges/nodes + pageInfo cursors).
+  fields: [pageInfo, edges, nodes, cursor]
+idempotency:
+  supported: false
+  note: No idempotency-key header/contract is documented for the V1 GraphQL API.
+versioning:
+  scheme: uri-path
+  current: v1
+  next: v2
+  detail: lifecycle/immersive-labs-lifecycle.yml
+error_envelope:
+  shape: graphql-errors
+  note: >-
+    GraphQL responses carry an errors[] array alongside data; HTTP-level auth
+    failures return standard 4xx from the tokens endpoint.
+rate_limiting:
+  documented: false
+cross_links:
+  authentication: authentication/immersive-labs-authentication.yml
+  lifecycle: lifecycle/immersive-labs-lifecycle.yml
+  conformance: conformance/immersive-labs-conformance.yml

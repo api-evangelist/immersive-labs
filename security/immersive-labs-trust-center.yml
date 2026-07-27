@@ -1,0 +1,21 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.immersivelabs.com/company/legal/security-and-privacy
+probe: false
+url: https://www.immersivelabs.com/company/legal/security-and-privacy
+trust_packet: >-
+  Trust & Assurance Packet available on request (SOC 2 Type II, ISO 27001, Cyber
+  Essentials Plus, penetration-testing reports, and company policies).
+certifications:
+- SOC 2 Type II
+- ISO 27001
+- UK Cyber Essentials Plus
+- GDPR
+data_protection:
+  encryption_at_rest: AES-256
+  encryption_in_transit: TLS 1.2 minimum
+  hosting: AWS (cloud-native)
+  disaster_recovery: 24-hour RTO/RPO
+evidence:
+- source: https://www.immersivelabs.com/company/legal/security-and-privacy
+  keywords: [soc 2, iso 27001, cyber essentials, gdpr, trust & assurance]

@@ -1,0 +1,25 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.immersivelabs.com/
+versioning:
+  scheme: uri-path
+  current: v1
+  next: v2
+  docs: https://docs.immersivelabs.com/
+  note: >-
+    API V1 (GraphQL) is documented at docs.immersivelabs.com. The legacy GraphQL
+    surface is "no longer being actively maintained"; active enhancement is ongoing
+    for API V2.
+deprecation:
+  policy_url: https://docs.immersivelabs.com/
+  sunset_header: null
+  note: >-
+    In-spec deprecation is signaled at the field level (e.g. the `series` query is
+    marked deprecated in favor of `collection`). No RFC 8594 Sunset/Deprecation
+    header contract is published.
+deprecated_operations:
+- series (use collection)
+sla:
+  url: https://status.immersivelabs.com
+  uptime_target: null
+status_page: https://status.immersivelabs.com

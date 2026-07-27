@@ -1,8 +1,30 @@
 aid: immersive-labs
 name: Immersive Labs
-description: Immersive Labs is a company surfaced as a portfolio company of menlo-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Immersive Labs (now branded "Immersive") is a cyber resilience platform — "the
+  cyber proving ground for the AI enterprise" — that lets organizations continuously
+  prove and improve the cyber readiness of their workforce, security teams, AI agents,
+  and leadership through hands-on labs, realistic drills, and crisis-simulation
+  exercises. Trusted by more than 30% of Fortune 100 companies, the platform measures
+  human and organizational cyber capability across people, process, and technology.
+  Its APIs let customers export achievements, assignable content, labs, collections,
+  cyber roles, and workforce-scenario data into their own reporting, SIEM, and
+  workforce-analytics systems. The current V1 API is GraphQL (with a legacy GraphQL
+  surface being retired in favor of an actively enhanced V2), authenticated with an
+  API access key and secret token exchanged for a short-lived bearer access token.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/6735fba9a631272fb4513263/6759b61c2c4a5793d96bfb2d_WhiteOutLogo.svg
 url: https://raw.githubusercontent.com/api-evangelist/immersive-labs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,15 +34,91 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-apis: []
+- Cybersecurity
+- Security Training
+- Cyber Resilience
+- Workforce Development
+- GraphQL
+- Security
+- Compliance
+apis:
+- name: Immersive API V1 (GraphQL)
+  description: >-
+    The Immersive platform V1 API — a single GraphQL endpoint exposing organizational
+    data (achievements, assignable content, labs, collections, cyber roles, viewer
+    account, workforce scenarios, and OIDC login requests). Authenticated with a
+    bearer access token minted by exchanging an API access key + secret token at the
+    public tokens endpoint (tokens expire after 30 minutes).
+  humanURL: https://docs.immersivelabs.com/
+  baseURL: https://api.immersivelabs.online/v1/graphql
+  properties:
+  - type: APIReference
+    url: https://docs.immersivelabs.com/
+  - type: Authentication
+    url: authentication/immersive-labs-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/immersive-labs-domain-security.yml
 - type: Website
   url: https://immersivelabs.com
+- type: DeveloperPortal
+  url: https://docs.immersivelabs.com/
+- type: APIReference
+  url: https://docs.immersivelabs.com/
+- type: Documentation
+  url: https://support.immersivelabs.com/hc/en-us/articles/29622787761809-API-Guide
+- type: GettingStarted
+  url: https://support.immersivelabs.com/hc/en-us/articles/29622787761809-API-Guide
+- type: Support
+  url: https://www.immersivelabs.com/support
+- type: HelpCenter
+  url: https://support.immersivelabs.com/hc/en-us
+- type: Blog
+  url: https://www.immersivelabs.com/resources/blog
+- type: GitHubOrganization
+  url: https://github.com/Immersive-Labs-Sec
+- type: Login
+  url: https://immersivelabs.online/signin
+- type: SignUp
+  url: https://www.immersivelabs.com/demo
+- type: TermsOfService
+  url: https://www.immersivelabs.com/company/legal/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.immersivelabs.com/privacy-policy/
+- type: StatusPage
+  url: https://status.immersivelabs.com
+- type: Compliance
+  url: https://www.immersivelabs.com/company/legal/security-and-privacy
+- type: Authentication
+  url: authentication/immersive-labs-authentication.yml
+- type: Conventions
+  url: conventions/immersive-labs-conventions.yml
+- type: Lifecycle
+  url: lifecycle/immersive-labs-lifecycle.yml
+- type: Deprecation
+  url: lifecycle/immersive-labs-lifecycle.yml
+- type: Conformance
+  url: conformance/immersive-labs-conformance.yml
+- type: LLMsTxt
+  url: llms/immersive-labs-llms.txt
+- type: MCPServer
+  url: mcp/immersive-labs-mcp.yml
+- type: VulnerabilityDisclosure
+  url: security/immersive-labs-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.immersivelabs.com/company/legal/security-and-privacy
+- type: TrustCenter
+  url: security/immersive-labs-trust-center.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

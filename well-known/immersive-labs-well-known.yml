@@ -1,0 +1,22 @@
+generated: '2026-07-19'
+method: probed
+host: https://api.immersivelabs.online
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+also_probed:
+- host: https://www.immersivelabs.com
+  path: /.well-known/security.txt
+  status: 404
+- host: https://immersivelabs.com
+  path: /.well-known/security.txt
+  status: 404
+note: >-
+  No /.well-known/ discovery documents are published on the API or website hosts.
+  Absence recorded as valid data; no WellKnown pointer wired.

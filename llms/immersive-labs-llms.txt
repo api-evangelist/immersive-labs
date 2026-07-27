@@ -1,0 +1,36 @@
+# Immersive Labs
+
+> Immersive Labs (branded "Immersive") is a cyber resilience platform — "the cyber proving ground for the AI enterprise" — that lets organizations prove and improve the cyber readiness of their workforce, security teams, AI agents, and leadership through hands-on labs, realistic drills, and crisis-simulation exercises. The V1 API is a single GraphQL endpoint authenticated with a short-lived bearer token minted from an API access key and secret token.
+
+## APIs
+
+- [Immersive API V1 (GraphQL)](https://docs.immersivelabs.com/): Single GraphQL endpoint at https://api.immersivelabs.online/v1/graphql exposing achievements, assignable content, labs, collections, cyber roles, viewer, workforce scenarios, and OIDC login. V2 (REST) is under active development.
+
+## Docs
+
+- [API Guide](https://support.immersivelabs.com/hc/en-us/articles/29622787761809-API-Guide): Generate an API key, exchange access key + secret token for a bearer token, and make requests.
+- [API Reference](https://docs.immersivelabs.com/): Interactive V1 GraphQL reference.
+- [Help Center](https://support.immersivelabs.com/hc/en-us): Customer support and setup guides (SSO, catalogs).
+- [Blog](https://www.immersivelabs.com/resources/blog): Product updates and threat-led releases.
+
+## Auth
+
+- Generate an API key in the platform to obtain an Access key and Secret token.
+- POST username={access_key}&password={secret_token} to https://api.immersivelabs.online/v1/public/tokens.
+- Send the returned token as Authorization: Bearer {token}. Tokens expire after 30 minutes.
+
+## Security
+
+- [Security & Privacy](https://www.immersivelabs.com/company/legal/security-and-privacy): SOC 2 Type II, ISO 27001, UK Cyber Essentials Plus, GDPR; HackerOne bug bounty; security@immersivelabs.com.
+- [Status](https://status.immersivelabs.com): Platform status page.
+
+## Repo artifacts
+
+- authentication/immersive-labs-authentication.yml
+- conventions/immersive-labs-conventions.yml
+- lifecycle/immersive-labs-lifecycle.yml
+- conformance/immersive-labs-conformance.yml
+- security/immersive-labs-vulnerability-disclosure.yml
+- security/immersive-labs-trust-center.yml
+- security/immersive-labs-domain-security.yml
+- mcp/immersive-labs-mcp.yml

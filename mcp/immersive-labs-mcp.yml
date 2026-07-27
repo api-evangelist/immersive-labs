@@ -1,0 +1,39 @@
+generated: '2026-07-19'
+method: derived
+status: candidate
+source: https://docs.immersivelabs.com/
+note: >-
+  No official hosted/remote MCP server was found for Immersive. This is a CANDIDATE
+  tool list derived one-to-one from the documented V1 GraphQL operations, for a
+  future MCP wrapper. Not a published server.
+server:
+  name: immersive-labs
+  transport: http
+tools:
+- name: get_achievement
+  description: Retrieve an individual achievement by ID.
+  source_operation: graphql/query.achievement
+- name: get_assignable_content
+  description: Fetch an assignable content instance.
+  source_operation: graphql/query.assignableContent
+- name: get_collection
+  description: Get a collection by ID.
+  source_operation: graphql/query.collection
+- name: get_cyber_role
+  description: Retrieve a cyber role by ID or slug.
+  source_operation: graphql/query.cyberRole
+- name: search_labs
+  description: Search labs with filtering (Relay connection).
+  source_operation: graphql/query.labsConnection
+- name: get_oidc_login_request
+  description: Retrieve OIDC login request info.
+  source_operation: graphql/query.oidcLoginRequest
+- name: get_viewer
+  description: Get the current authenticated account.
+  source_operation: graphql/query.viewer
+- name: search_workforce_scenarios
+  description: Search workforce scenarios (Relay connection).
+  source_operation: graphql/query.workforceScenariosConnection
+- name: attempt_oidc_login
+  description: Approve an existing OIDC provider session.
+  source_operation: graphql/mutation.oidcAttemptLoginRequest
