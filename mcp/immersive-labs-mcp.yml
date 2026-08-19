@@ -2,10 +2,8 @@ generated: '2026-07-19'
 method: derived
 status: candidate
 source: https://docs.immersivelabs.com/
-note: >-
-  No official hosted/remote MCP server was found for Immersive. This is a CANDIDATE
-  tool list derived one-to-one from the documented V1 GraphQL operations, for a
-  future MCP wrapper. Not a published server.
+note: No official hosted/remote MCP server was found for Immersive. This is a CANDIDATE tool list derived
+  one-to-one from the documented V1 GraphQL operations, for a future MCP wrapper. Not a published server.
 server:
   name: immersive-labs
   transport: http
@@ -37,3 +35,9 @@ tools:
 - name: attempt_oidc_login
   description: Approve an existing OIDC provider session.
   source_operation: graphql/mutation.oidcAttemptLoginRequest
+deployment:
+  mode: none
+  verified: derived
+  tools: 9
+  checked: '2026-08-12'
+  source: catalog MCP census
