@@ -12,6 +12,17 @@ description: >-
   workforce-analytics systems. The current V1 API is GraphQL (with a legacy GraphQL
   surface being retired in favor of an actively enhanced V2), authenticated with an
   API access key and secret token exchanged for a short-lived bearer access token.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
