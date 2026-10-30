@@ -64,6 +64,104 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Immersive Labs is a company surfaced as a portfolio company of menlo-ventures and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Immersive Labs (now branded "Immersive") is a cyber resilience platform — "the cyber proving ground for the AI enterprise" — that lets organizations continuously prove and improve the cyber readiness of their workforce, security teams, AI agents, and leadership through hands-on labs, realistic drills, and crisis-simulation exercises. Trusted by more than 30% of Fortune 100 companies, the platform measures human and organizational cyber capability across people, process, and technology. Its APIs let customers export achievements, assignable content, labs, collections, cyber roles, and workforce-scenario data into their own reporting, SIEM, and workforce-analytics systems. The current V1 API is GraphQL (with a legacy GraphQL surface being retired in favor of an actively enhanced V2), authenticated with an API access key and secret token exchanged for a short-lived bearer access token.
 
-Backed by: menlo-ventures — https://immersivelabs.com
+**Areas:** Company · Cybersecurity · Security Training · Cyber Resilience · Workforce Development · GraphQL · Security · Compliance
+
+## Immersive Labs on APIs.io
+
+Everything profiled for Immersive Labs is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/immersive-labs/](https://apis.io/providers/immersive-labs/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Immersive API V1 (GraphQL)](https://apis.io/apis/immersive-labs/immersive-api-v1-graphql/) — The Immersive platform V1 API — a single GraphQL endpoint exposing organizational data (achievements, assignable content, labs, collections, cyber roles,…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [immersive-labs](https://apis.io/servers/immersive-labs/immersive-labs/)
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Immersive Labs Authentication](https://apis.io/security/immersive-labs/immersive-labs-authentication/)
+- [Immersive Labs Domain Security](https://apis.io/security/immersive-labs/immersive-labs-domain-security/)
+- [Immersive Labs Trust Center](https://apis.io/security/immersive-labs/immersive-labs-trust-center/)
+- [Immersive Labs Vulnerability Disclosure](https://apis.io/security/immersive-labs/immersive-labs-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://immersivelabs.com)
+- [Documentation](https://support.immersivelabs.com/hc/en-us/articles/29622787761809-API-Guide)
+- [Getting started](https://support.immersivelabs.com/hc/en-us/articles/29622787761809-API-Guide)
+- [API reference](https://docs.immersivelabs.com/)
+- [Sign up](https://www.immersivelabs.com/demo)
+- [Support](https://www.immersivelabs.com/support)
+- [Blog](https://www.immersivelabs.com/resources/blog)
+- [Security](https://www.immersivelabs.com/company/legal/security-and-privacy)
+- [Compliance](https://www.immersivelabs.com/company/legal/security-and-privacy)
+- [Terms of service](https://www.immersivelabs.com/company/legal/terms-of-use)
+- [Privacy policy](https://www.immersivelabs.com/privacy-policy/)
+- [GitHub](https://github.com/Immersive-Labs-Sec)
+- [Status](https://status.immersivelabs.com)
+
+## API Evangelist rating
+
+**Kin Score 38.7** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 57.1 |
+| Access clarity | 50.0 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 35.3** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/immersive-labs/](https://apis.io/providers/immersive-labs/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Immersive Labs: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/immersive-labs/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
